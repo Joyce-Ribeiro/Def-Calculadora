@@ -23,6 +23,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="minimum">
+     <number>-99</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="spnbExp">
     <property name="geometry">
@@ -32,6 +35,9 @@
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="minimum">
+     <number>-99</number>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -123,6 +129,19 @@
     </property>
     <property name="text">
      <string>Calcular</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btngrafic_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>380</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar Gráfico</string>
     </property>
    </widget>
   </widget>
