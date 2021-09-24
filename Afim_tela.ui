@@ -91,6 +91,9 @@
     <property name="minimum">
      <number>-100</number>
     </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+    </property>
    </widget>
    <widget class="QSpinBox" name="spnB">
     <property name="geometry">
@@ -103,6 +106,9 @@
     </property>
     <property name="minimum">
      <number>-100</number>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
     </property>
    </widget>
    <widget class="QLabel" name="lblF">
@@ -158,6 +164,12 @@
     </property>
     <property name="maximum">
      <number>100</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">

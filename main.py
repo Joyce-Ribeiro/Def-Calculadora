@@ -123,6 +123,7 @@ def calc_log():
     a=float(str(log_tela.lblLogA.text()))
     b=float(str(log_tela.lblLogB.text()))
     f = math.log(a, b)
+    f= round(f,2)
     log_tela.lblLogRes.setText(str(f))
 
 class GraficoAfim(QDialog):
@@ -345,7 +346,7 @@ class GraficoExp(QDialog):
         f = selct_exp_comf()
         b = selct_exp_comb()
         a = f ** (1 / b)
-        a = math.ceil(a)
+        a = round(a,2)
         pen1 = QPen(Qt.black, 2, Qt.SolidLine)
 
         qp.setPen(pen1)
@@ -421,10 +422,10 @@ def calc_exp():
     f = str(exp_tela.lblfExp.text())
     b = str(exp_tela.lblbExp.text())
     if f!= "f(x)" and b!="B":
-        f= int(f)
-        b=(int(b))
+        f= float(f)
+        b=(float(b))
         a=f ** (1/b)
-        a=math.ceil(a)
+        a= round(a,2)
         exp_tela.lblaExp.setText(str(a))
 
 def exibeGraficoAfim():
